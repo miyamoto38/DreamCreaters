@@ -1,0 +1,136 @@
+@charset "UTF-8";
+html {font-size: 13px;}
+/* header */
+
+#header {
+	max-width: 1100px;
+	width: 100%;
+	height: auto;
+	background-color: #aaa;
+	margin: 0 auto;
+}
+
+#header h1 img {
+	max-width: 400px;
+	height: auto;
+	width: 100%;
+}
+
+#header header {
+	width: 92%;
+	margin: 20px auto;
+	background-color: #fff;
+}
+
+#header header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#header header .float_left {
+	float: initial;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#header header .float_left p {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+#header header .float_right {
+	float: initial;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* ソーシャルボタンのナビゲーション */
+#header header .float_right ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#header header .float_right .social_button li {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#header header .float_right .social_button li a {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* グローバルナビゲーション */
+
+#header header .float_right nav ul {
+	margin-top: 60px;
+	font-size: 20px;
+}
+
+#header header .float_right nav li {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#header header .float_right nav li a {
+	color: #000;
+	text-decoration: none;
+}
+
+#header header .float_right nav li a:hover {
+	color: orange;
+}
+
+#header p.kensaku {
+	margin-top: 1.25rem; /* 20 */
+	text-align: center;
+}
+
+#header p .nyuryoku {
+	width: 60%;
+	font-size: 20px;
+}
+
+#header p .kensaku_button {
+	width: 100px;
+	font-size: 20px;
+	background-color: #0069ad;
+	color: #fff;
+	border: none;
+	padding: 5px;
+}
+
+/* header終わり */
+
+/* ############## 580px以上 ############# */
+@media (min-width: 580px) {
+	html{font-size: 14px;}
+}
+
+/* ############## 768px以上 ############# */
+
+@media (min-width: 768px) {
+	html{font-size: 15px;}
+
+#header header .float_right {
+	float: right;
+	width: 46%;
+}
+
+#header header .float_left {
+	float: left;
+	width: 46%;
+}
+}
+
+/* ############## 980px以上 ############# */
+@media (min-width: 980px) {
+	html{font-size: 16px;}
+
+}
